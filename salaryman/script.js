@@ -10,7 +10,7 @@ class MyScene extends Phaser.Scene {
 
     frames.forEach((frame, i) => {
       const g = this.make.graphics({ x: 0, y: 0, add: false });
-      g.fillStyle(0xffffff);
+      g.fillStyle(0x000000);
       frame.forEach((row, y) => {
         row.split("").forEach((char, x) => {
           if (char === "#") {
@@ -78,7 +78,7 @@ class MyScene extends Phaser.Scene {
     } else {
       this.player.stop(); // Stop animation when not moving
       // Optionally, set to a 'idle' frame if you have one, e.g., this.player.setFrame('player0');
-      this.player.setFrame('player0'); // Set to the first frame (idle stance)
+      this.player.setTexture('player0'); // Set to the first frame (idle stance)
     }
   }
 }
@@ -88,7 +88,7 @@ const config = {
   width: 600,
   height: 800,
   pixelArt: true,
-  backgroundColor: '#333333',
+  backgroundColor: '#ffffff',
   physics: {
     default: 'arcade',
     arcade: {
