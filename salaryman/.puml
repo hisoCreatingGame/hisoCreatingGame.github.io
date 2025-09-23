@@ -1,0 +1,9 @@
+@startuml a
+actor "Customer" as C
+actor "Admin" as A
+rectangle System {
+  C --> (Order Product)
+  C --> (Track Order)
+  A --> (Manage Products)
+}
+@enduml
