@@ -1,2 +1,2 @@
 # hisoCreatingGame.github.io
-hisoCreatingGame.github.io/saralyman
+https://hisoCreatingGame.github.io/saralyman
