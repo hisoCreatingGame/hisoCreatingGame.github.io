@@ -30,7 +30,7 @@ class MyScene extends Phaser.Scene {
         { key: "player2" },
         { key: "player3" },
       ],
-      frameRate: 5, // Increased frame rate for a more noticeable walk
+      frameRate: 4, // Increased frame rate for a more noticeable walk
       repeat: -1,
     });
 
