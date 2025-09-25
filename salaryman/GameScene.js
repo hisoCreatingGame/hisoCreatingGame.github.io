@@ -6,7 +6,7 @@ class GameScene extends Phaser.Scene {
   // ▲▲▲ 追加 ▲▲▲
 
   preload() {
-    SalarymanImage.init();
+    salarymanImage.init();
   }
 
   create() {
@@ -30,7 +30,7 @@ class GameScene extends Phaser.Scene {
     this.isGameStarted = false;
     
     // (salarymanImageのフレーム生成処理は変更なし)
-    const frames = SalarymanImage.frames;
+    const frames = salarymanImage.frames;
     const frameWidth = frames[0][0].length;
     const frameHeight = frames[0].length;
     frames.forEach((frame, i) => {
@@ -127,7 +127,7 @@ class GameScene extends Phaser.Scene {
     this.enforceBounds();
   }
   showTitleScreen() {
-    this.stageText.setText('Buto-Ha-Salaryman');
+    this.stageText.setText('Buto-Ha-salaryman');
     this.startText.setText('Press SPACE to Start');
     this.startText.setVisible(true);
     this.panelContainer.setVisible(true);
