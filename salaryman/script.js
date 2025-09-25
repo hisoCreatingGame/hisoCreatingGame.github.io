@@ -1,6 +1,6 @@
 class MyScene extends Phaser.Scene {
   preload() {
-    salarymanImage.init();
+    SalarymanImage.init();
   }
 
   create() {
@@ -26,7 +26,7 @@ class MyScene extends Phaser.Scene {
     this.isTransitioning = false;
     this.isGameStarted = false;
     
-    const frames = salarymanImage.frames;
+    const frames = SalarymanImage.frames;
     const frameWidth = frames[0][0].length;
     const frameHeight = frames[0].length;
 
@@ -128,7 +128,7 @@ class MyScene extends Phaser.Scene {
   }
   
   showTitleScreen() {
-    this.stageText.setText('Salaryman Game');
+    this.stageText.setText('Buto-Ha-Salaryman');
     this.startText.setText('Press SPACE to Start');
     this.startText.setVisible(true);
     this.panelContainer.setVisible(true);

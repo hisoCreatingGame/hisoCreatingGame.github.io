@@ -1,5 +1,5 @@
 // This object will act as a library for character image data.
-const salarymanImage = {
+const SalarymanImage = {
   frames: [], // This will hold the character's animation frames.
 
   // init() prepares and stores the pixel data for the character.
@@ -1057,7 +1057,6 @@ const salarymanImage = {
 "....................................................................................................",
 "....................................................................................................",
       ],
-
     ];
   }
 };
