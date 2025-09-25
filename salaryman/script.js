@@ -1,3 +1,4 @@
+import { SalarymanImage } from "./SalarymanImage.js";
 class MyScene extends Phaser.Scene {
   preload() {
     SalarymanImage.init();
