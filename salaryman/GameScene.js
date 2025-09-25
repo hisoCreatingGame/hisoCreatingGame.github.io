@@ -51,7 +51,7 @@ class GameScene extends Phaser.Scene {
         { key: "player0" }, { key: "player1" },
         { key: "player2" }, { key: "player3" },
       ],
-      frameRate: 5,
+      frameRate: 6,
       repeat: -1,
     });
     
